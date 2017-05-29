@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/elixir
+    docker:
+      - image: trenpixster/elixir:1.4.1
+    steps:
+      - checkout
+      - run: mix test
